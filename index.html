@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personalized Tutoring</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Interval Logo" class="logo">
+  <nav>
+    <button class="menu-toggle">☰</button>
+  </nav>
+</header>
+<main>
+  <div>
+    <img src="header_image.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
+  </div>
+<form class="form" action="submit_form.php" method="post">
+  <h3 class="form-title">Join Our Individualized Tutoring Today</h3>
+  <div class="form-group">
+    <label for="guardian-name">Guardian Name:</label>
+    <input type="text" id="guardian-name" name="guardian_name" required>
+  </div>
+  <div class="form-group">
+    <label for="student-name">Student Name:</label>
+    <input type="text" id="student-name" name="student_name" required>
+  </div>
+  <div class="form-group">
+    <label for="class">Class:</label>
+    <select name="class" id="class">
+      <option value="">Select Class</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+  <div>
+    <label style="font-weight:bold ;">Board:</label>
+    <div >
+      <br>
+      <input type="radio" id="cbse_icse" name="board" value="CBSE/ICSE">
+      <label for="cbse_icse">CBSE/ICSE</label>
+      <input type="radio" id="ib_igcse" name="board" value="IB/IGCSE">
+      <label for="ib_igcse">IB/IGCSE</label>
+      
+    </div>
+    <div>
+      <input type="radio" id="state_board_other" name="board" value="State Board/Other">
+      <label for="state_board_other">State Board/Other</label>
+    </div>
+    <br>
+  </div>
+  
+  <div class="form-group">
+    <label for="contact-number">Contact Number:</label>
+    <input type="tel" id="contact-number" name="contact_number" required>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="submit-button">Submit</button>
+  </div>
+</form>
+
+<!-- ... (rest of the HTML above) -->
+<div>
+  <img src="whatbetter.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
+</div>
+<div>
+<br>
+<button class="demo-button">BOOK FREE DEMO</button>
+<br>
+</div>
+<!-- ... (us vs them) -->
+<div>
+  <img src="us_vs_them.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
+</div>
+
+<!-- ... (us vs them) -->
+
+<div>
+  <img src="howtostart.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
+</div>
+
+<div>
+  <br>
+  <button class="demo-button">BOOK FREE DEMO</button>
+  <br>
+  </div>
+
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq">
+      <div class="faq-question">
+        <button class="accordion">Are the tutors well qualified?</button>
+        <div class="panel">
+          <p>Details about the qualifications of the tutors...</p>
+        </div>
+      </div>
+  
+      <div class="faq-question">
+        <button class="accordion active">What are the timings for the classes?</button>
+        <div class="panel open">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+        </div>
+      </div>
+  
+      <!-- Repeat for other FAQ questions... -->
+  
+      <div class="faq-question">
+        <button class="accordion">Do you provide all subjects?</button>
+        <div class="panel">
+          <p>Information on the subjects provided...</p>
+        </div>
+      </div>
+    </div>
+  
+    <button class="more-questions">More Questions</button>
+  </div>
+<div>
+  <br>
+  <button class="demo-button">BOOK FREE DEMO</button>
+  <br>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

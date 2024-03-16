@@ -1,0 +1,199 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end; /* Align logo to the right */
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+}
+
+.logo {
+  width: 100px; /* Adjust as necessary for mobile */
+  height: auto;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Positioning menu toggle to the left */
+  left: 10px;
+  top: 10px;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #00AEEF; /* Adjust the blue background color as needed */
+  padding: 50px 10px; /* Padding for text spacing */
+}
+
+.hero h1 {
+  font-size: 1.2rem; /* Adjust font size for mobile */
+  margin-bottom: 20px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  .hero h1 {
+    font-size: 2rem; /* Larger font size for larger screens */
+  }
+
+  .logo {
+    width: 150px; /* Larger logo for larger screens */
+  }
+
+  .menu-toggle {
+    font-size: 8rem; /* Larger menu icon for larger screens */
+  }
+}
+.form {
+  width: 100%; /* Full width to match the image */
+  /* margin: 50px auto; */
+  background-color: #d5d3c3;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.form-group select {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+.submit-button {
+  background-color: #00b2ff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  width: 50%; /* Button width set to 50% of its parent container */
+  display: block; /* Display block to enable margin auto to work */
+  margin: 0 auto; /* Center the button horizontally */
+  box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+
+.demo-button {
+  background-color: #00AEEF; /* The blue background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 12px; /* Font size */
+  font-weight: bold; /* Font weight */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  text-transform: uppercase; /* Uppercase text */
+  outline: none; /* Remove focus border */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  display: block; /* Make the button a block-level element */
+  margin: 0 auto; /* Center the button horizontally */
+  width: fit-content; /* Make the button width as wide as its content */
+}
+
+.demo-button:hover, .demo-button:focus {
+  background-color: #008CBA; /* Slightly darker blue on hover/focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+
+
+.faq-container {
+  width: 100%;
+  max-width: 768px; /* Adjust width as needed */
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #cbc7c7;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.4s ease;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #ffffff;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 5px;
+}
+
+.open {
+  max-height: 200px; /* Adjust as needed */
+}
+
+.more-questions {
+  background-color: #00AEEF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
