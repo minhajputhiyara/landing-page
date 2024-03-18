@@ -382,7 +382,7 @@ h2 {
 }
 
 .statistics-section h2 {
-  color: #333;
+  color: #000000;
   margin-bottom: 30px;
   font-weight: bold; /* Make title text bold */
 }
@@ -398,8 +398,9 @@ h2 {
 }
 
 .statistic-value {
-  color: #fff;
-  font-size: 24px; /* Larger font size for the statistic value */
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px; /* Larger font size for the statistic value */
   border-radius: 50%;
   width: 60px; /* Size of the circle */
   height: 60px; /* Size of the circle */
@@ -412,8 +413,8 @@ h2 {
 }
 
 .statistic p {
-  color: #333;
-  font-size: 16px; /* Adjust the font size as needed */
+  color: #070707;
+  font-size: 14px; /* Adjust the font size as needed */
   text-align: left; /* Align the text to the left within the statistic block */
   background-color: #fff; /* White background for the text box */
   padding: 10px; /* Padding inside the text box */

@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Personalized Tutoring</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -28,23 +29,100 @@
     <input type="text" id="student-name" name="student_name" required>
   </div>
   <div class="form-group">
-    <label for="class">Class:</label>
-    <select name="class" id="class">
-      <option value="">Select Class</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-    </select>
+    <style>
+      .radio-button {
+        display: inline-block;
+        margin-right: 10px; /* Space between buttons */
+        margin-bottom: 10px; /* Space between lines of buttons */
+      }
+      
+      .radio-button input[type="radio"] {
+        display: none; /* Hide the default radio button */
+      }
+      
+      .radio-button label {
+        display: block;
+        width: 50px; /* Width of the box */
+        height: 50px; /* Height of the box */
+        border: 2px solid #CCCCCC; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center;
+        vertical-align: middle;
+        line-height: 46px; /* Center text vertically */
+        cursor: pointer;
+      }
+      
+      .radio-button input[type="radio"]:checked + label {
+        background-color: #007BFF; /* Background color for selected */
+        color: white; /* Text color for selected */
+        border: 2px solid #007BFF; /* Border color for selected */
+      }
+    </style>
+  
+    <label for="class">Class:</label><br>
+    <!-- Radio button for KG -->
+    <div class="radio-button">
+      <input type="radio" name="class" id="classKG" value="KG">
+      <label for="classKG">KG</label>
+    </div>
+    <!-- Radio button for class 1 -->
+    <div class="radio-button">
+      <input type="radio" name="class" id="class1" value="1">
+      <label for="class1">1</label>
+    </div>
+    <!-- Repeat for other classes up to 12 -->
+    <!-- Radio button for class 3 (selected) -->
+    <div class="radio-button">
+      <input type="radio" name="class" id="class3" value="3" checked>
+      <label for="class3">3</label>
+    </div>
+    <div class="radio-button">
+      <input type="radio" name="class" id="class4" value="4">
+      <label for="class4">4</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class5" value="5">
+      <label for="class5">5</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class6" value="6">
+      <label for="class6">6</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class7" value="7">
+      <label for="class7">7</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class8" value="8">
+      <label for="class8">8</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class9" value="9">
+      <label for="class9">9</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class10" value="10">
+      <label for="class10">10</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class11" value="11">
+      <label for="class11">11</label>
+    </div>
+    
+    <div class="radio-button">
+      <input type="radio" name="class" id="class12" value="12">
+      <label for="class12">12</label>
+    </div>
+    
   </div>
+  
   <div>
     <label style="font-weight:bold ;">Board:</label>
     <div >
@@ -105,55 +183,58 @@
 </div>
 
 <!-- testimonial -->
-
 <div class="testimonial-container">
-  <h2>Our Happy Family Voices</h2>
+  <h2>Our Happy <br>Family Voices</h2>
 
-  <div class="video-carousel">
-    <div class="carousel-item active">
-      <video controls poster="video/path-to-thumbnail1.jpg">
-        <source src="video/family-video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="testimonial-detail">
-        <h3>Fazeeda and family</h3>
-        <p>"Positively crashed our expectations!"</p>
-        <div class="rating">★★★★★</div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <video controls poster="thumb1.jpg" style="width: 100%; border-radius: 10px;">
+          <source src="video/family-video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="testimonial-detail">
+          <h3>Fazeeda and family</h3>
+          <p>"Positively crashed our expectations!"</p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <video controls poster="video/path-to-thumbnail2.jpg">
+          <source src="video/family-video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="testimonial-detail">
+          <h3>Fathima and family</h3>
+          <p>"A remarkable improvement in grades!"</p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <video controls poster="">
+          <source src="video/family-video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="testimonial-detail">
+          <h3>Rahul and family</h3>
+          <p>"The engagement level in classes is outstanding!"</p>
+          <div class="rating">★★★★★</div>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <video controls poster="video/path-to-thumbnail2.jpg">
-        <source src="video/family-video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="testimonial-detail">
-        <h3>Fathima and family</h3>
-        <p>"A remarkable improvement in grades!"</p>
-        <div class="rating">★★★★★</div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <video controls poster="video/path-to-thumbnail3.jpg">
-        <source src="video/family-video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="testimonial-detail">
-        <h3>Rahul and family</h3>
-        <p>"The engagement level in classes is outstanding!"</p>
-        <div class="rating">★★★★★</div>
-      </div>
-    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
 
-  <div class="pagination-dots">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-  
   <p>These families saw a difference with us and so can you!</p>
-  
+
   <button class="book-demo">BOOK FREE DEMO</button>
+</div>
+
 </div>
 
 
@@ -161,17 +242,17 @@
   <h2>According to 90% of the Parents</h2>
 
   <div class="statistic">
-    <div class="statistic-value" style="background: #add8e6;">4/5</div>
+    <div class="statistic-value" style="background: #c2dfe9;">4/5</div>
     <p>Students face study related anxiety</p>
   </div>
 
   <div class="statistic">
-    <div class="statistic-value" style="background: #f08080;">50%</div>
+    <div class="statistic-value" style="background: #bba5a5;">50%</div>
     <p>Students in upper primary classes find 3 subjects very difficult <span>[Maths, Science, Social science]</span></p>
   </div>
 
   <div class="statistic">
-    <div class="statistic-value" style="background: #98fb98;">5/5</div>
+    <div class="statistic-value" style="background: #a6ceca;">5/5</div>
     <p>Parents claim that ordinary classroom methods are not enough</p>
   </div>
 
@@ -250,6 +331,13 @@
   <button class="demo-button">BOOK FREE DEMO</button>
   <br>
   </div>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Include Swiper's JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 </body>
 <script>document.querySelectorAll('.faq-question').forEach(function(question) {
   question.addEventListener('click', function() {
@@ -273,20 +361,27 @@
     });
   });
 });
+const swiper = new Swiper('.mySwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-function currentSlide(index) {
-  const items = document.querySelectorAll('.carousel-item');
-  const dots = document.querySelectorAll('.pagination-dots .dot');
-  
-  items.forEach(item => item.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
+  // If you need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 
-  items[index - 1].classList.add('active');
-  dots[index - 1].classList.add('active');
-}
+  // Enable touch controls
+  touchEventsTarget: 'container',
+  simulateTouch: true,
+  grabCursor: true,
 
-document.querySelectorAll('.pagination-dots .dot').forEach((dot, i) => {
-  dot.addEventListener('click', () => currentSlide(i + 1));
+  // And if you need navigation buttons
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 
