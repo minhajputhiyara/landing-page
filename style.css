@@ -62,13 +62,14 @@ header {
   }
 }
 .form {
-  width: 100%; /* Full width to match the image */
-  /* margin: 50px auto; */
-  background-color: #d5d3c3;
+  width: 93%; /* Adjust the width as desired, smaller than 100% */
+  margin: 50px auto; /* Re-add this line to center the form */
+  background-color: #fff5eb;
   padding: 30px;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .form-title {
   text-align: center;
@@ -145,7 +146,7 @@ header {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #cbc7c7;
+  background-color: #dfe7f1;
 }
 
 h2 {
@@ -197,3 +198,317 @@ h2 {
   margin: 20px auto;
   text-transform: uppercase;
 }
+
+.testimonial-container {
+  max-width: 414px;
+  background-color: #00AEEF;
+  padding: 40px;
+  border-radius: 0px;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.testimonial-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  margin-bottom: 20px;
+  /* Make sure to include a thumbnail with rounded corners */
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.video-container,
+.video-carousel {
+  position: relative;
+}
+
+.carousel-item {
+  display: none; /* Hide all carousel items by default */
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-item.active {
+  display: flex; /* Only display the active item */
+}
+
+.video-carousel video {
+  width: 100%; /* Responsive video width */
+  border-radius: 10px; /* Match the container's border radius */
+}
+
+.testimonial-detail {
+  background-color: #00AEEF; /* White background for the text */
+  padding: 15px;
+   
+}
+
+.testimonial-detail h3 {
+  color: #ffffff; /* Dark text for readability */
+  margin-bottom: 5px;
+}
+
+.testimonial-detail p {
+  color: #ffffff; /* Slightly lighter text color for the description */
+  font-size: 16px;
+}
+
+.rating {
+  color: #ffd700; /* Gold color for the rating stars */
+  margin: 10px 0;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171; /* Darker color for the active dot */
+}
+
+.book-demo {
+  background-color:#fff ; /* Blue background for the button */
+  color:#00AEEF; /* White text color for the button */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 25px; /* Rounded corners for the button */
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block; /* To center the button */
+}
+
+/* You may need to adjust sizes, colors, margins, and padding to more closely match the image */
+
+
+/* ... what intervel does better ... */
+.features-section {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff; /* Adjust to the desired background color of the section */
+}
+
+.features-title {
+  margin-bottom: 30px;
+  color: #333333;
+  font-size: 24px; /* Adjust the size as necessary */
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px auto; /* Center the feature blocks */
+  padding: 20px;
+  border-radius: 20px;
+  width: calc(100% - 20px); /* 100% width minus the padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ... other styles ... */
+
+.feature-icon {
+  width: 50px; /* The width of the icon - make sure the image is square */
+  height: 50px; /* The height of the icon - should be the same as the width for a circle */
+  border-radius: 50%; /* This will make the image circular as long as the image is square */
+  object-fit: cover; /* This will make sure that the image covers the area and retains its aspect ratio */
+  /* Optional: if you want a border around the image */
+  border: 2px solid #ffffff; /* Adjust the border color as needed */
+  background-color: #ffffff; /* Adjust the background color as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* ... other styles ... */
+
+
+.feature-text {
+  text-align: left;
+}
+
+.feature-heading {
+  font-size: 14px; /* Smaller font size for the heading */
+  margin-bottom: 5px; /* Space between the heading and paragraph */
+  color: #333333;
+}
+
+.feature p {
+  font-size: 12px; /* Smaller font size for the paragraph */
+}
+
+/* statistics */
+
+.statistics-section {
+  width: 100%;
+  max-width: 610px; /* Adjust to control the section width */
+  margin: auto;
+  padding: 40px 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.statistics-section h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold; /* Make title text bold */
+}
+
+.statistic {
+  background-color: #988bb7; /* Lavender background for each statistic */
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px; /* Space between statistic blocks */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start (left) */
+}
+
+.statistic-value {
+  color: #fff;
+  font-size: 24px; /* Larger font size for the statistic value */
+  border-radius: 50%;
+  width: 60px; /* Size of the circle */
+  height: 60px; /* Size of the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0; /* Prevent the circle from shrinking */
+  border: 2px solid #fff; /* White border with increased thickness */
+}
+
+.statistic p {
+  color: #333;
+  font-size: 16px; /* Adjust the font size as needed */
+  text-align: left; /* Align the text to the left within the statistic block */
+  background-color: #fff; /* White background for the text box */
+  padding: 10px; /* Padding inside the text box */
+  border-radius: 10px; /* Slightly rounded corners for the text box */
+  font-weight: bold; /* Make paragraph text bold */
+  flex-grow: 1; /* Allow the paragraph to fill the space */
+}
+
+.call-to-action {
+  color: #333;
+  font-weight: normal;
+  margin-top: 20px; /* Adjust spacing as needed */
+  text-align: center;
+}
+
+/* banner */
+
+.cta-section {
+  background-color: #f8d7f9; /* Adjust to match the background color of your section */
+  text-align: center;
+  padding: 20px;
+}
+
+.cta-quote {
+  color: #000000; /* Adjust to match the text color */
+  font-size: 20px; /* Adjust to match the text size */
+  font-weight: bold; /* Make the quote bold */
+  margin-bottom: 10px;
+}
+
+.cta-text {
+  color: #000000; /* Adjust to match the text color */
+  font-size: 16px; /* Adjust to match the text size */
+  margin-bottom: 20px;
+}
+
+/* faq */
+.faq-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #e1e9f2; /* Assuming white background as in the image */
+  width:90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.faq-container h2 {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  font-size: 12px; /* Adjust as needed based on the image */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded edges */
+}
+
+.faq-question:focus {
+  outline: none; /* Remove focus outline for cleaner design */
+}
+
+.toggle-icon {
+  color: #007bff; /* Blue color for the icon as in the image */
+  font-weight: bold; /* Make the icon (+) bold */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  display: none; /* Initially hide the answer */
+  background-color: #ffffff; /* White background for the answer */
+  color: #333;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 10px; /* Rounded edges */
+}
+
+/* Style for the answer when it's meant to be shown */
+.faq-answer.active {
+  display: block;
+}
+
+
+

@@ -71,15 +71,113 @@
   </div>
 </form>
 
-<!-- ... (rest of the HTML above) -->
-<div>
-  <img src="whatbetter.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
+
+<div class="features-section">
+  <h2 class="features-title">What Interval Does Better</h2>
+  
+  <div class="feature" style="background: linear-gradient(to right, #d0e1fd, #dff4fd);">
+    <img src="png1.png" alt="Customized Pricing" class="feature-icon">
+    <div class="feature-text">
+      <h3 class="feature-heading">Customized Pricing,</h3>
+      <p>Pay according to sessions</p>
+    </div>
+  </div>
+  
+  <div class="feature" style="background: linear-gradient(to right, #fee3de, #ffd1d1);">
+    <img src="png2.png" alt="Flexible Timings" class="feature-icon">
+    <div class="feature-text">
+      <h3 class="feature-heading">Flexible timings,</h3>
+      <p>Choose according to your time</p>
+    </div>
+  </div>
+  
+  <div class="feature" style="background: linear-gradient(to right, #c3f9dd, #c4ecf2);">
+    <img src="png3.png" alt="Science-backed Teaching" class="feature-icon">
+    <div class="feature-text">
+      <h3 class="feature-heading">Science–backed teaching,</h3>
+      <p>Child–specific teaching styles</p>
+    </div>
+  </div>
 </div>
 <div>
-<br>
 <button class="demo-button">BOOK FREE DEMO</button>
 <br>
 </div>
+
+<!-- testimonial -->
+
+<div class="testimonial-container">
+  <h2>Our Happy Family Voices</h2>
+
+  <div class="video-carousel">
+    <div class="carousel-item active">
+      <video controls poster="video/path-to-thumbnail1.jpg">
+        <source src="video/family-video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="testimonial-detail">
+        <h3>Fazeeda and family</h3>
+        <p>"Positively crashed our expectations!"</p>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <video controls poster="video/path-to-thumbnail2.jpg">
+        <source src="video/family-video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="testimonial-detail">
+        <h3>Fathima and family</h3>
+        <p>"A remarkable improvement in grades!"</p>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <video controls poster="video/path-to-thumbnail3.jpg">
+        <source src="video/family-video3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="testimonial-detail">
+        <h3>Rahul and family</h3>
+        <p>"The engagement level in classes is outstanding!"</p>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  <p>These families saw a difference with us and so can you!</p>
+  
+  <button class="book-demo">BOOK FREE DEMO</button>
+</div>
+
+
+<div class="statistics-section">
+  <h2>According to 90% of the Parents</h2>
+
+  <div class="statistic">
+    <div class="statistic-value" style="background: #add8e6;">4/5</div>
+    <p>Students face study related anxiety</p>
+  </div>
+
+  <div class="statistic">
+    <div class="statistic-value" style="background: #f08080;">50%</div>
+    <p>Students in upper primary classes find 3 subjects very difficult <span>[Maths, Science, Social science]</span></p>
+  </div>
+
+  <div class="statistic">
+    <div class="statistic-value" style="background: #98fb98;">5/5</div>
+    <p>Parents claim that ordinary classroom methods are not enough</p>
+  </div>
+
+  <p class="call-to-action">Your child needs special attention for their studies!</p>
+</div>
+
 <!-- ... (us vs them) -->
 <div>
   <img src="us_vs_them.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
@@ -97,41 +195,100 @@
   <br>
   </div>
 
+  <!-- banner -->
+
+<br>
+  <div class="cta-section">
+    <p class="cta-quote">“Let them learn better and score better with Classroom”</p>
+    <p class="cta-text">Let your child start their journey now!</p>
+    <div class="button-container">
+      <button class="demo-button">BOOK FREE DEMO</button>
+      <br>
+    </div>
+  </div>
+  <br>
+  <br>
+<!-- end of the banner   -->
+
+  <!-- Frequently Asked Questions -->
+  <h2>Frequently Asked Questions</h2>
+
   <div class="faq-container">
-    <h2>Frequently Asked Questions</h2>
-    
-    <div class="faq">
-      <div class="faq-question">
-        <button class="accordion">Are the tutors well qualified?</button>
-        <div class="panel">
-          <p>Details about the qualifications of the tutors...</p>
-        </div>
-      </div>
   
-      <div class="faq-question">
-        <button class="accordion active">What are the timings for the classes?</button>
-        <div class="panel open">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-        </div>
-      </div>
-  
-      <!-- Repeat for other FAQ questions... -->
-  
-      <div class="faq-question">
-        <button class="accordion">Do you provide all subjects?</button>
-        <div class="panel">
-          <p>Information on the subjects provided...</p>
-        </div>
+    <div class="faq-item">
+      <button class="faq-question">Are the tutors well qualified ?<span class="toggle-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
   
-    <button class="more-questions">More Questions</button>
+    <!-- Repeat the structure below for each FAQ item. -->
+    <!-- Make sure only one item is active if you want only one answer open at a time. -->
+    <div class="faq-item">
+      <button class="faq-question">What are the timings for the classes?<span class="toggle-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    
+    <!-- ... other FAQ items ... -->
+  
+    <div class="faq-item">
+      <button class="faq-question">Is the price fixed for this course?<span class="toggle-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  
+    <!-- ... -->
   </div>
+  
+  
+
 <div>
   <br>
   <button class="demo-button">BOOK FREE DEMO</button>
   <br>
   </div>
 </body>
-<script src="script.js"></script>
+<script>document.querySelectorAll('.faq-question').forEach(function(question) {
+  question.addEventListener('click', function() {
+    var answer = this.nextElementSibling;
+    var icon = this.querySelector('.toggle-icon');
+
+
+    if (answer.style.display === 'none' || answer.style.display === '') {
+      answer.style.display = 'block';
+      icon.textContent = '−'; 
+    } else {
+      answer.style.display = 'none';
+      icon.textContent = '+'; 
+    }
+
+    document.querySelectorAll('.faq-answer').forEach(function(otherAnswer) {
+      if (otherAnswer !== answer) {
+        otherAnswer.style.display = 'none';
+        otherAnswer.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
+      }
+    });
+  });
+});
+
+function currentSlide(index) {
+  const items = document.querySelectorAll('.carousel-item');
+  const dots = document.querySelectorAll('.pagination-dots .dot');
+  
+  items.forEach(item => item.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  items[index - 1].classList.add('active');
+  dots[index - 1].classList.add('active');
+}
+
+document.querySelectorAll('.pagination-dots .dot').forEach((dot, i) => {
+  dot.addEventListener('click', () => currentSlide(i + 1));
+});
+
+
+</script>
 </html>
