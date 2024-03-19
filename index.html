@@ -19,7 +19,7 @@
     <img src="header_image.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
   </div>
 <form class="form" action="submit_form.php" method="post">
-  <h3 class="form-title">Join Our Individualized </h3>
+  <h3 class="form-title" id="section1">Join Our Individualized </h3>
   <h3 style="color:#7D3F98;text-align: center;
   margin-bottom: 20px;
   font-size: 1.8em;">Tutoring Today</h3>
@@ -46,12 +46,11 @@
       .radio-button label {
         display: block;
         width: 50px; /* Width of the box */
-        height: 50px; /* Height of the box */
+        height: 40px; /* Height of the box */
         border: 2px solid #CCCCCC; /* Border color */
         border-radius: 5px; /* Rounded corners */
         text-align: center;
-        vertical-align: middle;
-        line-height: 46px; /* Center text vertically */
+        line-height: 39px; /* Center text vertically */
         cursor: pointer;
       }
       
@@ -191,7 +190,7 @@
 
 
 <div>
-<button class="demo-button">BOOK FREE DEMO</button>
+<button class="demo-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
 <br>
 </div>
 <p style="text-align:center">Join our 30,000+ winning learners</p>
@@ -218,7 +217,7 @@
       <!-- Slide 2 -->
       <div class="swiper-slide">
         <video controls poster="video/path-to-thumbnail2.jpg">
-          <source src="video/family-video2.mp4" type="video/mp4">
+          <source src="https://www.youtube.com/watch?v=_F-4cE0HGGg&list=PL6MpdchqZMhwHsmAcuFtxKBzJROX71jb6&index=5&pp=iAQB" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="testimonial-detail">
@@ -246,7 +245,7 @@
 
   <p>These families saw a difference with us and so can you!</p>
 
-  <button class="book-demo">BOOK FREE DEMO</button>
+  <button class="book-demo"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
 </div>
 
 </div>
@@ -273,27 +272,35 @@
   <p class="call-to-action">Your child needs special attention for their studies!</p>
 </div>
 
+<div>
+  <button class="demo-button"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
+  <br>
+  </div>
+
 <!-- ... (us vs them) -->
 <div>
   <img src="us_vs_them.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
 </div>
-
+<div style="background-color:#f5f4f4";>
+  <br>
+  <button class="demo-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
+  <br>
+  </div>
 <!-- ... (us vs them) -->
 
 <div>
+  <br>
   <img src="howtostart.jpg" alt="Child with tutor character" style="width: 100%; height: auto; object-fit: cover; display: block;">
 </div>
 <br>
 <div style="background-color: white; color:#7D3F98; text-align: center; font-size: 24px; font-weight: bold; height: 100px; font-family: 'Arial', sans-serif;">
   JUST 3 MINUTES
-  <div style="font-size: 14px;color: black; font-weight: bold;">
-    
+  <div style="font-size: 14px;color: black; font-weight: bold;">  
     To unlock their true potential
   </div>
 </div>
-
 <div>
-  <button class="demo-button">BOOK FREE DEMO</button>
+  <button class="demo-button"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
   <br>
   </div>
 
@@ -304,7 +311,7 @@
     <p class="cta-quote">“Let them learn better and score better with Classroom”</p>
     <p class="cta-text">Let your child start their journey now!</p>
     <div class="button-container">
-      <button class="demo-button">BOOK FREE DEMO</button>
+      <button class="demo-button"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
       <br>
     </div>
   </div>
@@ -349,7 +356,7 @@
 
 <div>
   <br>
-  <button class="demo-button">BOOK FREE DEMO</button>
+  <button class="demo-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
   <br>
   </div>
 <!-- Link Swiper's CSS -->
@@ -404,6 +411,11 @@ const swiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
 
 
 </script>
