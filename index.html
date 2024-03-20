@@ -24,13 +24,12 @@
   margin-bottom: 20px;
   font-size: 1.8em;">Tutoring Today</h3>
   <div class="form-group">
-    <label for="guardian-name">Guardian Name:</label>
-    <input type="text" id="guardian-name" name="guardian_name" required>
+    <input type="text" id="guardian-name" name="guardian_name" placeholder="Guardian Name" required>
   </div>
   <div class="form-group">
-    <label for="student-name">Student Name:</label>
-    <input type="text" id="student-name" name="student_name" required>
+    <input type="text" id="student-name" name="student_name" placeholder="Student Name" required>
   </div>
+  
   <div class="form-group">
     <style>
       .radio-button {
@@ -143,9 +142,9 @@
   </div>
   
   <div class="form-group">
-    <label for="contact-number">Contact Number:</label>
-    <input type="tel" id="contact-number" name="contact_number" required>
+    <input type="tel" id="contact-number" name="contact_number" placeholder="Contact Number" required>
   </div>
+  
   <div class="form-group">
     <button type="submit" class="submit-button">Submit</button>
   </div>
@@ -204,36 +203,44 @@
     <div class="swiper-wrapper">
       <!-- Slide 1 -->
       <div class="swiper-slide">
-        <video controls poster="thumb1.jpg" style="width: 100%; border-radius: 10px;">
-          <source src="video/family-video1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/_F-4cE0HGGg?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="testimonial-detail">
-          <h3>Fazeeda and family</h3>
-          <p>"Positively crashed our expectations!"</p>
+          <h3>Nadi Muhammed</h3>
+          <p>"Story of our brightest student"</p>
           <div class="rating">★★★★★</div>
         </div>
       </div>
       <!-- Slide 2 -->
       <div class="swiper-slide">
-        <video controls poster="video/path-to-thumbnail2.jpg">
-          <source src="https://www.youtube.com/watch?v=_F-4cE0HGGg&list=PL6MpdchqZMhwHsmAcuFtxKBzJROX71jb6&index=5&pp=iAQB" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/zlTMQKHhGqg?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="testimonial-detail">
-          <h3>Fathima and family</h3>
-          <p>"A remarkable improvement in grades!"</p>
+          <h3>ILAN</h3>
+          <p>"See how ILAN gained confidence, found his passion, and is now thriving!!!"</p>
           <div class="rating">★★★★★</div>
         </div>
       </div>
       <!-- Slide 3 -->
       <div class="swiper-slide">
-        <video controls poster="">
-          <source src="video/family-video3.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/iDairzza6cY?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="testimonial-detail">
-          <h3>Rahul and family</h3>
+          <h3>A center for Individual tution</h3>
+          <p>"Positively crashed our expectations!""</p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="https://www.youtube.com/embed/oppNed4nQBU?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="testimonial-detail">
+          <h3>Actor Muktha</h3>
           <p>"The engagement level in classes is outstanding!"</p>
           <div class="rating">★★★★★</div>
         </div>
@@ -245,8 +252,9 @@
 
   <p>These families saw a difference with us and so can you!</p>
 
-  <button class="book-demo"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
+  <button class="book-demo" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
 </div>
+
 
 </div>
 
@@ -319,39 +327,83 @@
   <br>
 <!-- end of the banner   -->
 
-  <!-- Frequently Asked Questions -->
-  <h2 style="color:#7D3F98;">Frequently Asked Questions</h2>
+<!-- Frequently Asked Questions -->
+<h2 style="color:#7D3F98;">Frequently Asked Questions</h2>
 
-  <div class="faq-container">
-  
-    <div class="faq-item">
-      <button class="faq-question">Are the tutors well qualified ?<span class="toggle-icon">+</span></button>
-      <div class="faq-answer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
+<div class="faq-container">
+
+  <!-- Initially visible FAQ items -->
+  <div class="faq-item">
+    <button class="faq-question">Are the tutors well qualified?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>Yes, our tutors are considered to be subject matter experts, hence they will assist your child in their weak areas, especially in subjects like mathematics where our tutor mathematics puts in the extra effort.</p>
     </div>
-  
-    <!-- Repeat the structure below for each FAQ item. -->
-    <!-- Make sure only one item is active if you want only one answer open at a time. -->
-    <div class="faq-item">
-      <button class="faq-question">What are the timings for the classes?<span class="toggle-icon">+</span></button>
-      <div class="faq-answer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What are the timings for the classes?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>Each of our online classroom sessions has highly flexible timings according to your child's needs. Our crash course fees depend on the child's needs and weak areas.</p>
     </div>
-    
-    <!-- ... other FAQ items ... -->
-  
-    <div class="faq-item">
-      <button class="faq-question">Is the price fixed for this course?<span class="toggle-icon">+</span></button>
-      <div class="faq-answer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is the price fixed for this course?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>No, at Intervals our classroom course is mainly based on providing customized prices to your child's personalized needs hence the price differs. our prices are highly suitable for even class 12 online classes.</p>
     </div>
-  
-    <!-- ... -->
   </div>
   
+  <div class="faq-item">
+    <button class="faq-question">How many sessions are there in total?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>The sessions depend on the need and the subject you need, whether it's for any language classes or for an advanced physics syllabus your child will get sessions accordingly which will be every week based on the need.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <button class="faq-question">Do you provide all subjects?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>Yes, our tutors are considered to be subject matter experts, hence they will assist your child in their weak areas, especially in subjects like mathematics where our tutor mathematics puts in the extra effort.</p>
+    </div>
+  </div>
+  
+
+  <!-- Initially hidden FAQ items -->
+<div id="additional-faqs" style="display: none;">
+  <div class="faq-item">
+    <button class="faq-question">Does the classroom provide maths tutoring?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>Yes, the classroom is mostly enquired for its online tutor for mathematics as our tutors for this subject are known to handle maths as a subjects efficiently and we even have online tutor physics as well.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <button class="faq-question">Does classroom provide better math teacher online?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>Yes, our mathematics teacher online are the best that there is to offer and they are equipped to handle your child's needs on academics efficiently.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do you provide maths tuitions in countries like Qatar and Dubai?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>Yes, our classroom sessions aren't limited to one place as our maths tutor in Qatar and maths tuition in Dubai are rated to be the best among what's available out there.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What all crash courses are there in the classroom?<span class="toggle-icon">+</span></button>
+    <div class="faq-answer">
+      <p>We provide crash courses in the form of class 11 crash courses and crash course class 12 which helps your child prepare well.</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- See More/Less Toggle Button -->
+  <button onclick="toggleFaqs()" id="faq-toggle-btn" style="background:none; color:blue; border:none; cursor:pointer; text-decoration:underline; float:right; font-size:12px;">See more</button>
+</div>
   
 
 <div>
@@ -417,6 +469,17 @@ function scrollToSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
 }
 
+function toggleFaqs() {
+    var additionalFaqs = document.getElementById('additional-faqs');
+    var toggleBtn = document.getElementById('faq-toggle-btn');
+    if (additionalFaqs.style.display === 'none') {
+      additionalFaqs.style.display = 'block';
+      toggleBtn.textContent = 'See less';
+    } else {
+      additionalFaqs.style.display = 'none';
+      toggleBtn.textContent = 'See more';
+    }
+  }
 
 </script>
 </html>
