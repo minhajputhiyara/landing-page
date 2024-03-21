@@ -1,14 +1,72 @@
+@font-face {
+  font-family: "A Love of Thunder"; /* Use the exact font name */
+  src: url("fonts/A\ Love\ of\ Thunder.ttf"); /* Path to your uploaded font file */
+  /* Optional: Specify additional formats for wider browser compatibility */
+  /* format('truetype');  */
+}
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background-color: #2f72b3;
+  border-radius: 0 0 50px 50px; /* Rounded bottom edges */
+  font-family: 'A Love of Thunder', Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+  text-align: center; /* Center content on mobile */
+  overflow: hidden; /* Ensure no overflow from rounded corners */
+  z-index: 1;
+}
+
+.hero-content h1, .hero-content p {
+  color: white;
+}
+
+.hero-image {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto;
+  display: block; /* Remove any extra space beneath the image */
+  margin: 20px auto 0; /* Center image on mobile */
+  position:relative; /* Positioning context for top property */
+  top: 20px; /* Moves the image 20px down from its original position */
+  z-index: 2; /* Ensure the image stays behind the text */
+}
+
+
+/* Desktop and larger tablets */
+@media (min-width: 768px) {
+  .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content:flex-start /* Space between text and image */
+      /* text-align: left;  */
+  }
+
+  .hero-content, .hero-image {
+      flex-basis: 50%; /* Split space evenly between text and image */
+  }
+
+  .hero-image {
+      margin: 0; /* Reset margin for desktop */
+      order: 2; /* Image to the right */
+  }
+}
+
+/* body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+} */
+
 /* Reset default margins and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body, html {
-  width: 100%;
-  height: 100%;
-  font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -102,11 +160,12 @@ header {
   border-radius: 25px;
 }
 .submit-button {
-  background-color: #00b2ff; /* Blue background */
+  background-color: #2f72b3; /* Blue background */
   color: #fff; /* White text */
   padding: 10px 20px; /* Padding inside the button */
   border: none; /* No border */
   border-radius: 25px; /* Rounded corners */
+  font-size: 16px;
   cursor: pointer; /* Cursor changes to pointer on hover */
   width: 50%; /* Button width set to 50% of its parent container */
   display: block; /* Display block to enable margin auto to work */
@@ -116,12 +175,12 @@ header {
 
 
 .demo-button {
-  background-color: #00AEEF; /* The blue background color */
+  background-color: #2f72b3; /* The blue background color */
   color: white; /* Text color */
   border: none; /* No border */
   padding: 10px 20px; /* Padding inside the button */
   border-radius: 25px; /* Rounded corners */
-  font-size: 12px; /* Font size */
+  font-size: 16px; /* Font size */
   font-weight: bold; /* Font weight */
   cursor: pointer; /* Cursor changes to pointer on hover */
   text-transform: uppercase; /* Uppercase text */
@@ -201,7 +260,7 @@ h2 {
 
 .testimonial-container {
   max-width: 414px;
-  background-color: #00AEEF;
+  background-color: #2f72b3;
   padding: 40px;
   border-radius: 0px;
   text-align: center;
@@ -260,7 +319,7 @@ h2 {
 }
 
 .testimonial-detail {
-  background-color: #00AEEF; /* White background for the text */
+  background-color: #2f72b3; /* White background for the text */
   padding: 15px;
    
 }
@@ -307,7 +366,7 @@ h2 {
   padding: 10px 20px;
   margin-top: 20px;
   border-radius: 25px; /* Rounded corners for the button */
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
@@ -362,13 +421,13 @@ h2 {
 }
 
 .feature-heading {
-  font-size: 14px; /* Smaller font size for the heading */
+  font-size: 18px; /* Smaller font size for the heading */
   margin-bottom: 5px; /* Space between the heading and paragraph */
   color: #333333;
 }
 
 .feature p {
-  font-size: 12px; /* Smaller font size for the paragraph */
+  font-size: 16px; /* Smaller font size for the paragraph */
 }
 
 /* statistics */
@@ -511,5 +570,183 @@ h2 {
   display: block;
 }
 
+/* how to start */
 
+.steps-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
 
+.steps-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.step-number {
+  font-size: 38px;
+  color: #7D3F98;
+  font-weight: bold;
+  margin-right: 15px;
+  position: relative;
+  z-index: 1;
+  width: 50px; /* Fixed width for the number */
+}
+
+.icon-container {
+  width: 65px; /* Fixed size for the icon container */
+  height: 65px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  margin-right: -5px;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-container img {
+  width: 37px;
+  height: 34px;
+}
+
+.step-info {
+  flex-grow: 1;
+  flex-basis: calc(100% - 110px); /* Take full width minus the width of the number and icon containers */
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+  min-height: 120px; /* Minimum height for equal size */
+}
+
+.step-info h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.step-info p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Dotted line */
+/* .step::before {
+  content: '';
+  position: absolute;
+  left: 40px; 
+  top: 50%;
+  width: 2px;
+  height: calc(100% + 40px); 
+  background-image: linear-gradient(to bottom, black 50%, rgba(255,255,255,0) 50%);
+  background-repeat: repeat-y;
+  background-size: 2px 10px;
+  z-index: 0;
+} */
+
+/* Correcting last step to not show dotted line below */
+.step:last-child::before {
+  height: 50%;
+}
+
+/* To make sure the dotted line and squares align with the items */
+.step-number, .icon-container, .step-info {
+  align-self: center;
+}
+
+/* Adjust the height of the line to match the layout */
+.step:first-child::before {
+  top: calc(50% + 20px); /* Half the height of the step number and icon container */
+  bottom: -40px; /* Pull the line up to start from the center of the first step */
+}
+
+/* Adjust the height of the last line */
+.step:last-child::before {
+  height: 50%;
+}
+
+/* us vs them */
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading-container img {
+  vertical-align: middle; /* Align the 'VS' image with the text */
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 
+.divider1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: 20px solid red;
+  transform: translateX(-50%);
+}
+.divider2 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: 20px solid blue; 
+  transform: translateX(-50%);
+} */
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.feature-column {
+  width: 45%;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feature img {
+  width: 50px; /* Adjust the size as necessary */
+  height: 50px; /* Adjust the size to maintain aspect ratio */
+  border-radius: 50%; /* Creates a circular shape for the icons */
+  object-fit: cover; /* Ensures the image covers the circle area */
+  padding: 10px; /* Creates space around the icon inside the circle */
+  box-sizing: border-box;
+}
+
+.feature-column.left .feature img {
+  background-color: #ADD8E6; /* Light blue background for left side icons */
+}
+
+.feature-column.right .feature img {
+  background-color: #FFB6C1; /* Light red background for right side icons */
+}
+
+.feature p {
+  margin: 0;
+  padding-left: 10px; /* Adds some space between the icon and the text */
+}
