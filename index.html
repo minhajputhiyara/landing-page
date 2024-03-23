@@ -17,7 +17,7 @@
 <main>
   <div class="hero-section">
     <div class="hero-content">
-        <h1>PERSONALIZED TUTORING UNIQUEUE TO YOUR CHILD</h1>
+        <h1>PERSONALIZED TUTORING UNIQUE TO YOUR CHILD</h1>
         <!-- <p>This text should be on the top of the image on mobile and to the right on desktop.</p> -->
     </div>
     <img src="images/main.png" class="hero-image">
@@ -574,6 +574,11 @@ document.addEventListener('DOMContentLoaded', function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  });
+  
+  // Add event listeners for manual swiping
+  swiper.on('slideChange', function () {
+    swiper.autoplay.start(); // Restart autoplay on manual swiping
   });
 });
 

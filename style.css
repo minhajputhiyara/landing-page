@@ -17,7 +17,7 @@ body, h1, p {
 }
 
 .hero-section {
-  background-color: #2f72b3;
+  background: linear-gradient(#2f72b3,#008fc2);
   border-radius: 0 0 50px 50px; /* Rounded bottom edges */
   font-family: 'A Love of Thunder', Arial, sans-serif;
   padding: 20px;
@@ -860,3 +860,4 @@ h2 {
   margin: 0;
   padding-left: 10px; /* Adds some space between the icon and the text */
 }
+
