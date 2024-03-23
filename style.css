@@ -11,7 +11,13 @@
   /* format('truetype');  */
 }
 
-body, h1, p {
+h1{
+  margin: 0;
+  padding: 0; 
+}
+
+body,p {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +25,7 @@ body, h1, p {
 .hero-section {
   background: linear-gradient(#2f72b3,#008fc2);
   border-radius: 0 0 50px 50px; /* Rounded bottom edges */
-  font-family: 'A Love of Thunder', Arial, sans-serif;
+  font-family: 'A Love of Thunder', Arial, sans-serif;@import url();
   padding: 20px;
   position: relative;
   text-align: center; /* Center content on mobile */
@@ -434,7 +440,7 @@ h2 {
 
 .feature-heading {
   font-size: 18px; /* Smaller font size for the heading */
-  font-family: poppins;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 5px; /* Space between the heading and paragraph */
   margin-left: 12px;
   color: #161616;
@@ -443,7 +449,8 @@ h2 {
 .feature p {
   font-size: 12px; /* Smaller font size for the paragraph */
   text-align: justify;
-  font-family: poppins;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -474,7 +481,8 @@ h2 {
 .featureb p {
   font-size: 14px; /* Smaller font size for the paragraph */
   text-align:left;
-  font-family: poppins;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -507,7 +515,7 @@ h2 {
 .statistic-value {
   color: #000000;
   font-family: poppins;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 20px; /* Larger font size for the statistic value */
   border-radius: 50%;
   width: 60px; /* Size of the circle */
@@ -522,9 +530,9 @@ h2 {
 
 .statistic p {
   color: #070707;
-  font-family: poppins;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px; /* Adjust the font size as needed */
-  text-align: justify; /* Align the text to the left within the statistic block */
+  text-align: start; /* Align the text to the left within the statistic block */
   background-color: #fff; /* White background for the text box */
   padding: 10px; /* Padding inside the text box */
   border-radius: 10px; /* Slightly rounded corners for the text box */
@@ -684,6 +692,7 @@ h2 {
 }
 
 .step-info h3 {
+  font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 20px;
   font-weight: bold;
@@ -692,8 +701,9 @@ h2 {
 
 .step-info p {
   color:black;
-  font-size: 16px;
-  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: start;
   line-height: 1.4;
 }
 
