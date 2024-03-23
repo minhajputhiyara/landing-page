@@ -49,12 +49,12 @@
       
       .radio-button label {
         display: block;
-        width: 50px; /* Width of the box */
-        height: 40px; /* Height of the box */
+        width: 45px; /* Width of the box */
+        height: 35px; /* Height of the box */
         border: 2px solid #CCCCCC; /* Border color */
         border-radius: 5px; /* Rounded corners */
         text-align: center;
-        line-height: 39px; /* Center text vertically */
+        line-height: 35px; /* Center text vertically */
         cursor: pointer;
       }
       
@@ -133,7 +133,7 @@
   
   <div>
     <label style="font-weight: bold; margin-right: 10px;">Board:</label>
-    <div>
+    <div style="margin-bottom: 10px;">
         <br>
         <input type="radio" id="cbse_icse" name="board" value="CBSE/ICSE" style="margin-right: 5px;">
         <label for="cbse_icse" style="margin-right: 20px;">CBSE/ICSE</label>
@@ -189,7 +189,7 @@
 <br>
 <div style="background-color: white; color:#7D3F98; text-align: center; font-size: 28px; font-weight: bold; height: 65px; font-family: 'poppins', sans-serif;margin-bottom: 18px;">
   JUST 3 MINUTES
-  <div style="font-size: 14px;color: black; font-weight: bold;">
+  <div style="font-size: 14px;color: black; font-weight: normal;">
     
     To unlock their true potential
   </div>
@@ -211,53 +211,32 @@
     <div class="swiper-wrapper">
       <!-- Slide 1 -->
       <div class="swiper-slide">
-        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <iframe src="https://www.youtube.com/embed/_F-4cE0HGGg?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe id="player1" src="https://www.youtube.com/embed/_F-4cE0HGGg?enablejsapi=1&controls=1&rel=0&showinfo=0" style="width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
         </div>
-        <!-- <div class="testimonial-detail">
-          <h3>Nadi Muhammed</h3>
-          <p>"Story of our brightest student"</p>
-          <div class="rating">★★★★★</div>
-        </div> -->
       </div>
       <!-- Slide 2 -->
       <div class="swiper-slide">
-        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <iframe src="https://www.youtube.com/embed/zlTMQKHhGqg?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe id="player2" src="https://www.youtube.com/embed/zlTMQKHhGqg?enablejsapi=1&controls=1&rel=0&showinfo=0" style="width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
         </div>
-        <!-- <div class="testimonial-detail">
-          <h3>ILAN</h3>
-          <p>"See how ILAN gained confidence, found his passion, and is now thriving!!!"</p>
-          <div class="rating">★★★★★</div>
-        </div> -->
       </div>
       <!-- Slide 3 -->
       <div class="swiper-slide">
-        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <iframe src="https://www.youtube.com/embed/iDairzza6cY?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe id="player3" src="https://www.youtube.com/embed/oppNed4nQBU?enablejsapi=1&controls=1&rel=0&showinfo=0" style="width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
         </div>
-        <!-- <div class="testimonial-detail">
-          <h3>A center for Individual tution</h3>
-          <p>"Positively crashed our expectations!""</p>
-          <div class="rating">★★★★★</div>
-        </div> -->
       </div>
       <!-- Slide 4 -->
       <div class="swiper-slide">
-        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <iframe src="https://www.youtube.com/embed/oppNed4nQBU?controls=1&rel=0&showinfo=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe id="player4" src="https://www.youtube.com/embed/iDairzza6cY?enablejsapi=1&controls=1&rel=0&showinfo=0" style="width: 100%; height: 100%; border-radius: 10px;" frameborder="0" allowfullscreen></iframe>
         </div>
-        <!-- <div class="testimonial-detail">
-          <h3>Actor Muktha</h3>
-          <p>"The engagement level in classes is outstanding!"</p>
-          <div class="rating">★★★★★</div>
-        </div> -->
       </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
   </div>
-
   <p>These families saw a difference with us and so can you!</p>
 
   <button class="book-demo" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
@@ -293,71 +272,79 @@
   <br>
   </div>
 
-<!-- ... (us vs them) -->
-<br>
-<div style="background-color:#f5f4f4":>
-  <br>
-<div class="heading-container">
-  <h1>US <img style="width: 50px;"src="images/vs.png" alt="VS"> THEM</h1>
-</div>
-
-<div class="description">
-  <p>This is what sets apart from Traditional teaching institutions!</p>
-</div>
-
-<div class="features-container">
-  <div class="feature-column left">
-    <h2>Interval Classroom</h2>
-    <!-- Add your features with icons here -->
-    <div class="feature">
-      <img src="images/learning.png" alt="Feature 1">
-      <p>One Teacher for a Student</p>
+  <div style="background-color:#f5f4f4;">
+    <br>
+    <div class="heading-container">
+      <h1>US <img style="width: 50px;" src="images/vs.png" alt="VS"> THEM</h1>
     </div>
-    <div class="feature">
-      <img src="images/brain.png" alt="Feature 1">
-      <p>Special Attention</p>
+  
+    <div class="description">
+      <p>This is what sets apart from Traditional teaching institutions!</p>
     </div>
-    <div class="feature">
-      <img src="images/blended-learning.png" alt="Feature 1">
-      <p>Blended Learning</p>
+  
+    <!-- Wrapper added for flexbox display and border -->
+    <div style="display: flex;">
+  
+      <div class="featuresb-container" style="flex: 1; padding-right: 20px; border-right: 2px solid red;">
+        <div class="featureb-column left">
+          <h2>Interval Classroom</h2>
+          <!-- Your features go here -->
+          <div class="featureb" >
+            <img src="images/learning.png" alt="Feature 1">
+            <p>One Teacher for a Student</p>
+          </div>
+          <!-- Additional features omitted for brevity -->
+          <div class="featureb">
+            <img src="images/brain.png" alt="Feature 1">
+            <p>Special Attention</p>
+          </div>
+          <div class="featureb">
+            <img src="images/blended-learning.png" alt="Feature 1">
+            <p>Blended Learning</p>
+          </div>
+          <div class="featureb">
+            <img src="images/communications.png" alt="Feature 1">
+            <p>Live Doubt Solving</p>
+          </div>
+          <!-- Repeat for other features -->
+        </div>
+      </div>
+  
+      <!-- Right side does not need extra padding or border, but kept inside the wrapper for layout -->
+      <div class="featuresb-container" style="flex: 1; padding-left: 20px;">
+        <div class="featureb-column right">
+          <h2>Regular Classroom</h2>
+          <!-- Your features go here -->
+          <div class="featureb">
+            <img src="images/classroom (1).png" alt="Feature 5">
+            <p>1 Teacher for a Whole Classroom</p>
+          </div>
+          <!-- Additional features omitted for brevity -->
+          <div class="featureb">
+            <img src="images/Dispersed-attention.png" alt="Feature 5">
+            <p>Dispersed Attention</p>
+            
+          </div>
+          <div class="featureb">
+            <img src="images/reading-book.png" alt="Feature 5">
+            <p>Textual Learning</p>
+            
+          </div>
+          <div class="featureb">
+            
+            <img src="images/people.png" alt="Feature 5">
+            <p>Basic Answering Session</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="feature">
-      <img src="images/communications.png" alt="Feature 1">
-      <p>Live Doubt Solving</p>
-    </div>
-    <!-- Repeat for other features -->
+  
   </div>
   
-  <div class="feature-column right">
-    <h2>Regular Classroom</h2>
-    <!-- Add your features with icons here -->
-    <div class="feature">
-      <img src="images/classroom.png" alt="Feature 5">
-      <p>1 Teacher for a Whole Classroom</p>
-      
-    </div>
-    <div class="feature">
-      <img src="images/Dispersed-attention.png" alt="Feature 5">
-      <p>Dispersed Attention</p>
-      
-    </div>
-    <div class="feature">
-      <img src="images/reading-book.png" alt="Feature 5">
-      <p>Textual Learning</p>
-      
-    </div>
-    <div class="feature">
-      
-      <img src="images/people.png" alt="Feature 5">
-      <p>Basic Answering Session</p>
-    </div>
-    <!-- Repeat for other features -->
-  </div>
-</div>
-
-<div >
+<div style="background-color: #f5f4f4;">
   <button class="demo-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
-  </div>
+  <br>
+</div>
   <br>
 </div>
 
@@ -400,7 +387,7 @@
 <br>
 <div style="background-color: white; color:#7D3F98; text-align: center; font-size: 28px; font-weight: bold; height: 65px; font-family: 'poppins', sans-serif;margin-bottom: 18px;">
   JUST 3 MINUTES
-  <div style="font-size: 14px;color: black; font-weight: bold;">
+  <div style="font-size: 14px;color: black; font-weight: normal;">
     
     To unlock their true potential
   </div>
@@ -521,6 +508,7 @@
 
 <!-- Include Swiper's JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 
 
 </body>
@@ -546,37 +534,49 @@
     });
   });
 });
-// Wrap your existing swiper initialization code in an onload event
-window.onload = function() {
-  const swiper = new Swiper('.mySwiper', {
-    // Optional parameters
+var swiper;
+var players = []; // To store multiple YT.Player instances
+
+// This function gets called by the YouTube IFrame API once it's loaded
+function onYouTubeIframeAPIReady() {
+  document.querySelectorAll('.video-wrapper iframe').forEach((iframe, index) => {
+    // Initialize a YT.Player for each iframe
+    var player = new YT.Player(iframe.id, {
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
+    players.push(player); // Store the player instance for later use
+  });
+}
+
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING) {
+    swiper.autoplay.stop();
+  } else if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
+    swiper.autoplay.start();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  swiper = new Swiper('.mySwiper', {
     direction: 'horizontal',
     loop: true,
-
-    // Add autoplay to the existing parameters
     autoplay: {
-      delay: 3000, // Auto play every 3 seconds
-      disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+      delay: 9000,
+      disableOnInteraction: false,
     },
-
-    // If you need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-
-    // Enable touch controls
-    touchEventsTarget: 'container',
-    simulateTouch: true,
-    grabCursor: true,
-
-    // And if you need navigation buttons
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
-};
+});
+
 
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);

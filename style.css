@@ -399,7 +399,6 @@ h2 {
   color: #333333;
   font-size: 24px; /* Adjust the size as necessary */
 }
-
 .feature {
   display: flex;
   align-items: center;
@@ -411,13 +410,15 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 /* ... other styles ... */
 
 .feature-icon {
   width: 50px; /* The width of the icon - make sure the image is square */
   height: 50px; /* The height of the icon - should be the same as the width for a circle */
   border-radius: 50%; /* This will make the image circular as long as the image is square */
-  object-fit: cover; /* This will make sure that the image covers the area and retains its aspect ratio */
+  object-fit:cover; /* This will make sure that the image covers the area and retains its aspect ratio */
   /* Optional: if you want a border around the image */
   border: 2px solid #ffffff; /* Adjust the border color as needed */
   background-color: #ffffff; /* Adjust the background color as needed */
@@ -434,12 +435,47 @@ h2 {
 .feature-heading {
   font-size: 18px; /* Smaller font size for the heading */
   margin-bottom: 5px; /* Space between the heading and paragraph */
+  margin-left: 12px;
   color: #333333;
 }
 
 .feature p {
-  font-size: 16px; /* Smaller font size for the paragraph */
+  font-size: 14px; /* Smaller font size for the paragraph */
+  text-align: justify;
+  font-family: poppins;
 }
+
+
+/* feautureb */
+
+.featureb-icon {
+  width: 50px; /* The width of the icon - make sure the image is square */
+  height: 50px; /* The height of the icon - should be the same as the width for a circle */
+  border-radius: 50%; /* This will make the image circular as long as the image is square */
+  object-fit: cover; /* This will make sure that the image covers the area and retains its aspect ratio */
+  /* Optional: if you want a border around the image */
+  border: 2px solid #ffffff; /* Adjust the border color as needed */
+  background-color: #ffffff; /* Adjust the background color as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.featureb-text {
+  text-align: left;
+}
+
+.featureb-heading {
+  font-size: 18px; /* Smaller font size for the heading */
+  margin-bottom: 5px; /* Space between the heading and paragraph */
+  margin-left: 12px;
+  color: #333333;
+}
+
+.featureb p {
+  font-size: 14px; /* Smaller font size for the paragraph */
+  text-align:left;
+  font-family: poppins;
+}
+
 
 /* statistics */
 
@@ -469,6 +505,7 @@ h2 {
 
 .statistic-value {
   color: #000000;
+  font-family: poppins;
   font-weight: bold;
   font-size: 20px; /* Larger font size for the statistic value */
   border-radius: 50%;
@@ -484,17 +521,18 @@ h2 {
 
 .statistic p {
   color: #070707;
+  font-family: poppins;
   font-size: 14px; /* Adjust the font size as needed */
-  text-align: left; /* Align the text to the left within the statistic block */
+  text-align: justify; /* Align the text to the left within the statistic block */
   background-color: #fff; /* White background for the text box */
   padding: 10px; /* Padding inside the text box */
   border-radius: 10px; /* Slightly rounded corners for the text box */
-  font-weight: bold; /* Make paragraph text bold */
+  font-weight: normal; /* Make paragraph text bold */
   flex-grow: 1; /* Allow the paragraph to fill the space */
 }
 
 .call-to-action {
-  color: #333;
+  color: #101010;
   font-weight: normal;
   margin-top: 20px; /* Adjust spacing as needed */
   text-align: center;
@@ -654,6 +692,7 @@ h2 {
 .step-info p {
   color:black;
   font-size: 16px;
+  text-align: justify;
   line-height: 1.4;
 }
 
@@ -780,4 +819,44 @@ h2 {
 
 .floating-cta:hover img {
   transform: scale(1.1); /* Slightly scale up the icon on hover */
+}
+
+
+.featuresb-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.featureb-column {
+  width: 45%;
+}
+
+.featureb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.featureb img {
+  width: 50px; /* Adjust the size as necessary */
+  height: 50px; /* Adjust the size to maintain aspect ratio */
+  border-radius: 50%; /* Creates a circular shape for the icons */
+  object-fit: cover; /* Ensures the image covers the circle area */
+  padding: 5px; /* Creates space around the icon inside the circle */
+  box-sizing: border-box;
+}
+
+.featureb-column.left .featureb img {
+  background-color: #ADD8E6; /* Light blue background for left side icons */
+}
+
+.featureb-column.right .featureb img {
+  background-color: #FFB6C1; /* Light red background for right side icons */
+}
+
+.featureb p {
+  margin: 0;
+  padding-left: 10px; /* Adds some space between the icon and the text */
 }
