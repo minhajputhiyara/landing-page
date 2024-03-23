@@ -502,13 +502,6 @@
     </a>
   </div>
 
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<!-- Include Swiper's JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-
 <!-- Slick Carousel CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -549,14 +542,11 @@ $(document).ready(function(){
   var slickCarousel = $('.mySlickCarousel');
 
   slickCarousel.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
-    // Check if the current slide contains a video
     var currentIframe = slick.$slides.eq(currentSlide).find('iframe');
     if (currentIframe.length > 0) {
-      // Pause autoplay when video starts
-      slickCarousel.slick('slickPause');
+      slick.slickPause(); // Pause autoplay when video starts
     } else {
-      // Resume autoplay when video ends
-      slickCarousel.slick('slickPlay');
+      slick.slickPlay(); // Resume autoplay when video ends
     }
   });
 
@@ -570,6 +560,7 @@ $(document).ready(function(){
     pauseOnFocus: true
   });
 });
+
 
 
 function scrollToSection(sectionId) {
