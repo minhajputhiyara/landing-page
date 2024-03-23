@@ -1,7 +1,13 @@
 @font-face {
   font-family: "A Love of Thunder"; /* Use the exact font name */
   src: url("fonts/A\ Love\ of\ Thunder.ttf"); /* Path to your uploaded font file */
-  /* Optional: Specify additional formats for wider browser compatibility */
+  /* Optional: Specify formats for wider browser compatibility */
+  /* format('truetype');  */
+}
+@font-face {
+  font-family: "Poppins"; /* Use the exact font name */
+  src: url("fonts/Poppins/Poppins-Bold.ttf"); /* Path to your uploaded Poppins font file */
+  /* Optional: Specify formats for wider browser compatibility */
   /* format('truetype');  */
 }
 
@@ -122,7 +128,7 @@ header {
 .form {
   width: 93%; /* Adjust the width as desired, smaller than 100% */
   margin: 50px auto; /* Re-add this line to center the form */
-  background-color: #fff5eb;
+  background: linear-gradient(rgba(255, 232, 206, 0.3), rgba(251, 184, 160, 0.3));
   padding: 30px;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -189,7 +195,9 @@ header {
   display: block; /* Make the button a block-level element */
   margin: 0 auto; /* Center the button horizontally */
   width: fit-content; /* Make the button width as wide as its content */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
 }
+
 
 .demo-button:hover, .demo-button:focus {
   background-color: #008CBA; /* Slightly darker blue on hover/focus */
@@ -205,12 +213,15 @@ header {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #dfe7f1;
+  background: linear-gradient(rgba(172, 203, 238, 0.3), rgba(231, 240, 253, 0.3));
+
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Poppins', Arial, sans-serif;
+
 }
 
 .accordion {
@@ -260,7 +271,7 @@ h2 {
 
 .testimonial-container {
   max-width: 414px;
-  background-color: #2f72b3;
+  background:linear-gradient(#2f72b3,#008fc3);
   padding: 40px;
   border-radius: 0px;
   text-align: center;
@@ -447,7 +458,7 @@ h2 {
 }
 
 .statistic {
-  background-color: #988bb7; /* Lavender background for each statistic */
+  background: linear-gradient(to right, #8c7db9, #998bb8); /* Lavender background for each statistic */
   border-radius: 15px;
   padding: 15px;
   margin-bottom: 20px; /* Space between statistic blocks */
@@ -538,9 +549,10 @@ h2 {
   background-color: #ffffff; /* Light grey background */
   color: #333;
   padding: 15px;
+  text-align: left;
   border: none;
   width: 100%;
-  font-size: 12px; /* Adjust as needed based on the image */
+  font-size: 14px; /* Adjust as needed based on the image */
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px; /* Rounded edges */
@@ -559,10 +571,11 @@ h2 {
   margin-top: 10px;
   display: none; /* Initially hide the answer */
   background-color: #ffffff; /* White background for the answer */
-  color: #333;
+  color: rgb(17, 16, 16);
   padding: 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 10px; /* Rounded edges */
+  line-height: 1.6;
 }
 
 /* Style for the answer when it's meant to be shown */
@@ -610,7 +623,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3498db;
   margin-right: -5px;
   position: relative;
   z-index: 1;
@@ -633,13 +645,14 @@ h2 {
 }
 
 .step-info h3 {
-  color: #333;
+  color: black;
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .step-info p {
-  color: #666;
+  color:black;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -734,7 +747,7 @@ h2 {
   height: 50px; /* Adjust the size to maintain aspect ratio */
   border-radius: 50%; /* Creates a circular shape for the icons */
   object-fit: cover; /* Ensures the image covers the circle area */
-  padding: 10px; /* Creates space around the icon inside the circle */
+  padding: 5px; /* Creates space around the icon inside the circle */
   box-sizing: border-box;
 }
 
@@ -749,4 +762,22 @@ h2 {
 .feature p {
   margin: 0;
   padding-left: 10px; /* Adds some space between the icon and the text */
+}
+/* floating CTA */
+
+.floating-cta {
+  position: fixed; /* Fixed position to stay on the screen */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it's above other items */
+}
+
+.floating-cta img {
+  width: 50px; /* Size of the icon */
+  height: 50px; /* Size of the icon */
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.floating-cta:hover img {
+  transform: scale(1.1); /* Slightly scale up the icon on hover */
 }
