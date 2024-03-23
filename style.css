@@ -434,13 +434,14 @@ h2 {
 
 .feature-heading {
   font-size: 18px; /* Smaller font size for the heading */
+  font-family: poppins;
   margin-bottom: 5px; /* Space between the heading and paragraph */
   margin-left: 12px;
-  color: #333333;
+  color: #161616;
 }
 
 .feature p {
-  font-size: 14px; /* Smaller font size for the paragraph */
+  font-size: 12px; /* Smaller font size for the paragraph */
   text-align: justify;
   font-family: poppins;
 }
