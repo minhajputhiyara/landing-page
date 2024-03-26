@@ -133,7 +133,7 @@ header {
 }
 .form {
   width: 93%; /* Adjust the width as desired, smaller than 100% */
-  margin: 50px auto; /* Re-add this line to center the form */
+  margin:20px auto; /* Re-add this line to center the form */
   background: linear-gradient(rgba(255, 232, 206, 0.3), rgba(251, 184, 160, 0.3));
   padding: 30px;
   border-radius: 25px;
@@ -160,7 +160,7 @@ header {
 .form-group input[type="text"],
 .form-group input[type="tel"] {
   width: calc(100% - 20px); /* Adjust width to account for padding */
-  padding: 10px;
+  padding: 13px;
   border: 1px solid #ccc;
   border-radius: 25px;
 }
@@ -396,12 +396,14 @@ h2 {
 /* ... what intervel does better ... */
 .features-section {
   text-align: center;
+  margin:0px auto;
+  margin-bottom:-10px;
   padding: 10px;
   background-color: #ffffff; /* Adjust to the desired background color of the section */
 }
 
 .features-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #333333;
   font-size: 24px; /* Adjust the size as necessary */
 }
@@ -491,14 +493,14 @@ h2 {
 .statistics-section {
   width: 100%;
   max-width: 610px; /* Adjust to control the section width */
-  margin: auto;
-  padding: 40px 20px; /* Adjust padding as needed */
+  margin: 20px auto;
+  padding: 0px 20px; /* Adjust padding as needed */
   box-sizing: border-box; /* Include padding in the width */
 }
 
 .statistics-section h2 {
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: bold; /* Make title text bold */
 }
 
@@ -552,6 +554,8 @@ h2 {
 .cta-section {
   background-color: #f8d7f9; /* Adjust to match the background color of your section */
   text-align: center;
+  margin-top:20px;
+  margin-bottom:-20px;
   padding: 20px;
 }
 
@@ -635,14 +639,14 @@ h2 {
 .steps-container {
   width: 80%;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 20px auto;
   text-align: center;
 }
 
 .steps-container h2 {
   color: #333;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .step {
@@ -665,7 +669,7 @@ h2 {
 .icon-container {
   width: 65px; /* Fixed size for the icon container */
   height: 65px;
-  border: 2px solid #fff;
+  border: 2px solid #3498db;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -813,25 +817,6 @@ h2 {
   margin: 0;
   padding-left: 10px; /* Adds some space between the icon and the text */
 }
-/* floating CTA */
-
-.floating-cta {
-  position: fixed; /* Fixed position to stay on the screen */
-  bottom: 20%; /* Distance from the bottom */
-  left: 90%; /* Distance from the right */
-  transform: translate(-50%, 50%);
-  z-index: 1000; /* Ensure it's above other items */
-}
-
-.floating-cta img {
-  width: 50px; /* Size of the icon */
-  height: 50px; /* Size of the icon */
-  transition: transform 0.3s; /* Smooth transform on hover */
-}
-
-.floating-cta:hover img {
-  transform: scale(1.1); /* Slightly scale up the icon on hover */
-}
 
 
 .featuresb-container {
@@ -848,7 +833,7 @@ h2 {
 .featureb {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .featureb img {
@@ -873,3 +858,61 @@ h2 {
   padding-left: 10px; /* Adds some space between the icon and the text */
 }
 
+/* floating cta */
+
+.floating-cta {
+  position: fixed; /* Fixed position within the viewport */
+  bottom: 0px; /* Positioned towards the bottom of the viewport */
+  width:100%;
+  height:50px;
+  background-color: #7D3F98; /* Red background */
+  color: #FFFFFF; /* White text */
+  padding: 10px 20px; /* Some padding around the text */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* A subtle shadow to lift the button off the page */
+  z-index: 1000; /* Make sure it's above other items */
+}
+
+
+.ctas-text {
+  text-align: left; /* Center the text inside the CTA */
+  display: flex;
+  font-weight: bold; /* Make the CTA text bold */
+}
+
+.price-strike {
+  text-decoration: line-through; /* Strike-through effect for the original price */
+  color: #777; /* A lighter color to make it less prominent than the discounted price */
+  margin-right: 5px; /* A small margin between the original price and the discounted price */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .floating-cta {
+    right: 0px;
+    bottom: 0px;
+    padding: 5px 10px;
+  }
+}
+
+
+.float-button {
+  background-color: #2f72b3; /* The blue background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Font weight */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  text-transform: uppercase; /* Uppercase text */
+  outline: none; /* Remove focus border */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  display: block; /* Make the button a block-level element */
+  width: fit-content; /* Make the button width as wide as its content */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+}

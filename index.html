@@ -237,8 +237,6 @@
   <!-- Add Pagination -->
   <div class="slick-pagination"></div>
   
-  <p>These families saw a difference with us and so can you!</p>
-
   <button class="book-demo" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
 </div>
 
@@ -286,7 +284,7 @@
   
       <div class="featuresb-container" style="flex: 1; padding-right: 20px; border-right: 2px solid red;">
         <div class="featureb-column left">
-          <h2 style="display: inline-block;"><img src="images/interval.png" alt="Interval Logo" style="height: 1.5em; width: auto; margin-top:20px;"></h2>
+          <h2 class="centered-heading">Our Classroom</h2>
           <!-- Your features go here -->
           <div class="featureb" >
             <img src="images/learning.png" alt="Feature 1">
@@ -312,7 +310,7 @@
       <!-- Right side does not need extra padding or border, but kept inside the wrapper for layout -->
       <div class="featuresb-container" style="flex: 1; padding-left: 20px;">
         <div class="featureb-column right">
-          <h2>Regular Classroom</h2>
+          <h2 class="centered-heading">Regular Classroom</h2>
           <!-- Your features go here -->
           <div class="featureb">
             <img src="images/classroom (1).png" alt="Feature 5">
@@ -344,46 +342,45 @@
   <button class="demo-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
   <br>
 </div>
-  <br>
 </div>
-
-<!-- ... (how to start) -->
 
 <div class="steps-container">
   <h2>Here’s How We Can Get Started!</h2>
-  <div class="step" id="step1">
-      <div class="step-number">01</div>
-      <div class="icon-container" style="background: linear-gradient(rgba(78, 134, 224, 0.7), rgba(107, 169, 198, 0.7))">
+  <div class="step" id="step1" style="position: relative;">
+      <div class="icon-container" style="background: linear-gradient(rgb(78, 134, 224), rgb(107, 169, 198))">
           <img src="images/viber.png" alt="Book a Demo">
       </div>
       <div class="step-info">
           <h3>Book a Demo</h3>
           <p>Tell us you’re interested and we will reach out to you!</p>
       </div>
+      <!-- Arrow Below Step 1 -->
+      <div style="position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid black;"></div>
   </div>
-  <div class="step" id="step2">
-      <div class="step-number">02</div>
-      <div class="icon-container" style="background: linear-gradient(rgba(243, 175, 184, 0.7), rgba(251, 209, 214, 0.7))">
+  <div class="step" id="step2" style="position: relative;">
+      <div class="icon-container" style="background: linear-gradient(rgb(243, 175, 184), rgb(251, 209, 214))">
           <img src="images/checklist.png" alt="Assessment">
       </div>
       <div class="step-info">
           <h3>Assessment</h3>
           <p>We will fix an assessment for your child to help figure out the weak points and personalize a unique schedule for your child.</p>
       </div>
+      <!-- Arrow Below Step 2 -->
+      <div style="position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid black;"></div>
   </div>
-  <div class="step" id="step3">
-      <div class="step-number">03</div>
-      <div class="icon-container" style="background: linear-gradient(rgba(133, 244, 187, 0.7), rgba(140, 217, 232, 0.7));">
+  <div class="step" id="step3" style="position: relative;">
+      <div class="icon-container" style="background: linear-gradient(rgb(133, 244, 187), rgb(140, 217, 232));">
           <img src="images/low-cost.png" alt="Decide">
       </div>
       <div class="step-info">
           <h3>Decide</h3>
           <p>Customize your plan along with the price to suit your needs and outcomes!</p>
       </div>
+      <!-- Arrow Below Step 3 -->
+      <div style="position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid black;"></div>
   </div>
 </div>
 
-<br>
 <div style="background-color: white; color:#7D3F98; text-align: center; font-size: 28px; font-weight: bold; height: 65px; font-family: 'poppins', sans-serif;margin-bottom: 18px;">
   JUST 3 MINUTES
   <div style="font-size: 14px;color: black; font-weight: normal;">
@@ -393,18 +390,15 @@
 </div>
 <div>
   <button class="demo-button"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
-  <br>
   </div>
 
   <!-- banner -->
-
-<br>
   <div class="cta-section">
     <p class="cta-quote">“Let them learn better and score better with Classroom”</p>
     <p class="cta-text">Let your child start their journey now!</p>
     <div class="button-container">
       <button class="demo-button"onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
-      <br>
+  
     </div>
   </div>
   <br>
@@ -494,12 +488,16 @@
   <br>
   <button class="demo-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
   <br>
+  <br>
+  <br>
+  <br>
   </div>
 
-  <div class="floating-cta" onclick="scrollToSection('section1')">
-    <a href="#">
-      <img src="images/calendar-clock.png" alt="CTA"> <!-- Replace with your actual icon path -->
-    </a>
+  <div class="floating-cta">
+    <div class="ctas-text">
+      Register now
+    <button class="float-button" onclick="scrollToSection('section1')">BOOK FREE DEMO</button>
+    </div>
   </div>
 
 <!-- Slick Carousel CSS -->
