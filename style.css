@@ -534,7 +534,7 @@ h2 {
   color: #070707;
   font-family: 'Roboto', sans-serif;
   font-size: 14px; /* Adjust the font size as needed */
-  text-align: start; /* Align the text to the left within the statistic block */
+  text-align:center; /* Align the text to the left within the statistic block */
   background-color: #fff; /* White background for the text box */
   padding: 10px; /* Padding inside the text box */
   border-radius: 10px; /* Slightly rounded corners for the text box */
@@ -859,32 +859,30 @@ h2 {
 }
 
 /* floating cta */
-
 .floating-cta {
-  position: fixed; /* Fixed position within the viewport */
-  bottom: 0px; /* Positioned towards the bottom of the viewport */
-  width:100%;
-  height:50px;
-  background-color: #7D3F98; /* Red background */
-  color: #FFFFFF; /* White text */
-  padding: 10px 20px; /* Some padding around the text */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* A subtle shadow to lift the button off the page */
-  z-index: 1000; /* Make sure it's above other items */
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  color: #7D3F98;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-
 .ctas-text {
-  text-align: left; /* Center the text inside the CTA */
+  text-align: left;
   display: flex;
-  font-weight: bold; /* Make the CTA text bold */
+  font-weight: bold;
+  font-size: 20px; /* Increased font size for better visibility */
 }
 
 .price-strike {
-  text-decoration: line-through; /* Strike-through effect for the original price */
-  color: #777; /* A lighter color to make it less prominent than the discounted price */
-  margin-right: 5px; /* A small margin between the original price and the discounted price */
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 5px;
 }
-
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
@@ -895,24 +893,36 @@ h2 {
   }
 }
 
-
 .float-button {
-  background-color: #2f72b3; /* The blue background color */
-  color: white; /* Text color */
-  border: none; /* No border */
+  background-color: #2f72b3;
+  color: white;
+  border: none;
+  height: 55px;
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
-  padding: 10px 20px; /* Padding inside the button */
-  border-radius: 25px; /* Rounded corners */
-  font-size: 14px; /* Font size */
-  font-weight: bold; /* Font weight */
-  cursor: pointer; /* Cursor changes to pointer on hover */
-  text-transform: uppercase; /* Uppercase text */
-  outline: none; /* Remove focus border */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
-  display: block; /* Make the button a block-level element */
-  width: fit-content; /* Make the button width as wide as its content */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: block;
+  width: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation: glow 2s infinite alternate; /* Apply the glow animation */
 }
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 8px 0 rgba(47, 114, 179, 0.7);
+  }
+  to {
+    box-shadow: 0 0 20px 5px rgba(47, 114, 179, 0.5);
+  }
+}
+
+
