@@ -821,13 +821,13 @@ h2 {
 
 .featuresb-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
 .featureb-column {
-  width: 45%;
+  width:80%;
 }
 
 .featureb {
