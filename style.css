@@ -897,14 +897,15 @@ h2 {
   background-color: #2f72b3;
   color: white;
   border: none;
-  height: 55px;
+  align-content: center;
+  text-align: center;
   position: absolute;
   top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
+  left: 50%; /* Center the button horizontally */
+  transform: translate(-50%, -50%); /* Adjust for both horizontal and vertical centering */
   padding: 10px 20px;
   border-radius: 25px;
-  font-size: 18px; /* Slightly larger font size */
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
@@ -912,17 +913,7 @@ h2 {
   transition: background-color 0.3s, box-shadow 0.3s;
   display: block;
   width: fit-content;
+  height: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  animation: glow 2s infinite alternate; /* Apply the glow animation */
+  animation: glow 2s infinite alternate;
 }
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 8px 0 rgba(47, 114, 179, 0.7);
-  }
-  to {
-    box-shadow: 0 0 20px 5px rgba(47, 114, 179, 0.5);
-  }
-}
-
-
